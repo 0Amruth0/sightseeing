@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>east</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Hind:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Hind:wght@500&family=Yeseva+One&display=swap');
+
+        #titlelogo{
+        font-size: 16px;
+        font-family: 'Great Vibes', cursive;
+        color: rgb(255, 208, 0);
+        }
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        font-family:  "Montserrat",sans-serif;
+        }
+
+        li {
+        float: left;
+        }
+
+        li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+        background-color: #111;
+        }
+
+        .active {
+        background-color: #04AA6D;
+        }
+        div.north{
+            background-image: url('./assets/eastbg.jpg');
+            height: 900px;
+            background-repeat:no-repeat;
+            padding: 10px;
+        }
+        #middle1 {
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            top: 700px;
+            left: 820px;
+            text-align: center;
+        }
+        #left1 {
+            position: absolute;
+            width: 40%;
+            top: 1100px;
+            color: white;
+            border: 3px solid transparent;
+            height:300px;
+            border-radius: 20px;
+            left: 50px;
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+
+        }
+        #right1 {
+            position: absolute;
+            font-size: 200px;
+            color: white;
+            top:700px;
+            left: 73%;
+        }
+        #img1 {
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            top: 1500px;
+            left: 72%;
+        }
+        #left2 {
+            position: absolute;
+            width: 40%;
+            top: 1900px;
+            color: white;
+            border: 3px solid transparent;
+            height:300px;
+            border-radius: 20px;
+            left: 45%;
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+        }
+        #right2{
+            position: absolute;
+            font-size: 200px;
+            color: white;
+            top:1500px;
+            left: 5%;
+
+        }
+        #img2{
+            position: absolute;
+            top: 2300px;
+            left: 20%;
+            
+        }
+        #left3 {
+            position: absolute;
+            width: 40%;
+            top: 2700px;
+            color: white;
+            border: 3px solid transparent;
+            height:300px;
+            border-radius: 20px;
+            left: 50px;
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+        }
+        #right3 {
+            position: absolute;
+            font-size: 200px;
+            color: white;
+            top:2300px;
+            left: 70%;
+
+        }
+        #img3 {
+            position: absolute;
+            top: 3100px;
+            left: 60%;
+        }
+        #left4 {
+            position: absolute;
+            width: 40%;
+            top: 3420px;
+            color: white;
+            border: 3px solid transparent;
+            height:300px;
+            border-radius: 20px;
+            left: 47%;
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+
+        }
+        #right4 {
+            position: absolute;
+            font-size: 200px;
+            color: white;
+            top:3000px;
+            left: 5%;
+
+        }
+        #img4 {
+            position: absolute;
+            top: 3800px;
+            left: 20%;
+        }
+        #left5 {
+            position: absolute;
+            width: 40%;
+            top: 4150px;
+            color: white;
+            border: 3px solid transparent;
+            height:300px;
+            border-radius: 20px;
+            left: 50px;
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+        }
+        #right5 {
+            position: absolute;
+            font-size: 200px;
+            color: white;
+            top:3800px;
+            left: 70%;
+        }
+        #img5 {
+            position: absolute;
+            top: 4600px;
+            left: 60%;
+        }
+        /* @keyframes animate{
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(15px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        } */
+        @keyframes rotatee{
+            0% {
+                transform: scale(0.4) ;
+            }
+            50% {
+                transform: scale (0.7) ;
+            }
+            100% {
+                transform: scale (1) ;
+            }
+        }
+        #img1,#img2,#img3,#img4,#img5,#right1,#right2,#right3,#right3,#right4,#left1,#left2,#left3,#left4,#left5,#middle1,.north{
+            animation: rotatee 1s ease forwards;
+        }
+
+        #img1:hover,#img2:hover,#img3:hover,#img4:hover,#img5:hover{
+            animation: animate 2s ease forwards;
+        }
+
+    </style>
+</head>
+<body bgcolor="#333">
+    <header>
+        <ul>
+            <li style="padding-right:35% ;" id="titlelogo"><a href="#home">Elysian elegance</a></li>
+
+            <li><a href="north.html">NORTH</a></li>
+            <li><a href="east.html">EAST</a></li>   
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="west.html">WEST</a></li>
+            <li><a href="south.html">SOUTH</a></li>
+            
+        
+          </ul>
+    </header>
+    <div class="north">
+        <div id="middle1">
+            <img src="img/homepage.jpg" style="width:300px;height: 300px; border-radius: 20px;">
+            <h1 style="margin-top:-80%;color:azure;font-family: 'Trebuchet MS' ;color: black;">EAST</h1>
+        </div>
+        <div id="left1">
+            <h1 style="font-size: 100px;"><b>Unakoti</b></h1>
+            <p><b><i>About the place...</i></b></p>
+            <pre style="font-size: 15px;">
+                 As per Hindu mythology, when Lord Shiva was going to Kashi along 
+                with one crore gods and goddesses he made a night halt at this 
+                location. He asked all the gods and goddesses to wake up before 
+                sun rise and proceed for Kashi.
+            </pre>
+            <pre style="font-size: 20px;">
+                It is said that in the morning, except Shiva himself, no 
+                one else could get up so Lord Shiva set out for Kashi 
+                himself cursing the others to become stone images. As a 
+                result we have one less than a crore stone images and carvings 
+                at Unakoti. These carvings are located at a beautifully landscaped 
+                forest area with green vegetation all around which add to the 
+                beauty of the carvings. The images found at Unakoti are of two 
+                types, namely rock-carved figures and stone images.
+            </pre>
+        </div>
+        <div id="right1">
+            <h1>01</h1>
+        </div>    
+        <div id="img1">
+            <img src="assets\unakoti.jpg" style="border-radius: 20px;height: 300px;width:480px;">
+        </div>
+
+
+
+
+        <div id="left2">
+            <h1 style="font-size: 70px;">Jatinga</h1>
+            <p><b><i>About the place...</i></b></p>
+            <pre style="font-size: 15px;"><br>
+                jatinga, is one of the most popular bird watching
+                center under the supervision of district forestry 
+                office in Haflong.
+            </pre>
+            <br>
+            <br>
+                <pre style="font-size: 20px;">
+                    Tourists visiting Assam, or more specifically Silchar 
+                    does not miss this attraction point as it is famous for 
+                    its “bird suicide” phenomenon. You would be mesmerised in 
+                    this small and serene village of Jatinga, which is located
+                    about 9 kms south of the town of Haflong. This beautiful 
+                    village has earned its popularity due to both its majestic 
+                    views and the mysterious phenomenon of birds “committing suicide”.
+                </pre>
+        </div>
+        <div id="right2">
+            <h1>02</h1>
+        </div>    
+        <div id="img2">
+            <img src="assets\jatinga.jpg" style="border-radius: 20px;height: 300px;width:480px;">
+        </div>
+
+
+
+
+
+        <div id="left3">
+            <h1 style="font-size: 70px;">Gyanganj</h1>
+            <p><b><i>About the place...</i></b></p>
+            <pre style="font-size: 15px;"><br>                
+                Located somewhere within the mystical valleys of 
+                Himalayas, is 'Gyanganj', the land of immortals. 
+            </pre>
+            <br>
+            <br>
+            <pre style="font-size: 20px;">
+                It is a mythological belief that Gyanganj is a city-kingdom 
+                inhabited by mysterious immortal beings that influence the 
+                existence of human beings in subtle ways, whenever needed.  
+                Only great saints devoid of any bad Karma can find a place in 
+                this spiritual land by passing through psychic barriers and 
+                dimensions. The exact location of this legendary kingdom is 
+                unknown as it is believed that Gyanganj artfully camouflages 
+                itself from humans, as well as mapping technologies. Some also 
+                believe that Gyanganj exists in a different plane of reality 
+                and thus cannot be detected by satellites.
+            </pre>
+        </div>
+        <div id="right3">
+            <h1>03</h1>
+        </div>    
+        <div id="img3">
+            <img src="assets\Gyanganj.jpg" style="border-radius: 20px;height: 300px;width:480px;">
+        </div>
+
+
+
+
+
+        <div id="left4">
+            <h1 style="font-size: 70px;">Jingmaham Living</h1>
+            <h1 style="font-size: 70px;">Root Bridge</h1>
+            <p><b><i>About the place...</i></b></p>
+            <pre style="font-size: 15px;"><br>                
+                Living Root Bridges are found in West Jaintia Hills district,
+                 East Khasi Hills district, and a few other areas of Meghalaya 
+                that are among the places in India that deserve more travelers.
+            </pre>
+            <br>
+            <br>
+            <pre style="font-size: 20px;">
+                However, the best root bridges are concentrated in Cherrapunji
+                and Shillong. There are bridges around the world that are known 
+                to be human’s finest creations! But the natural marvel of Living 
+                Root Bridges in Meghalaya is mindblowing. These wonderful structures
+                have meticulously grown over a period of time and are among the 
+                biggest attractions in Meghalaya.
+
+            </pre>
+        </div>
+        <div id="right4">
+            <h1>04</h1>
+        </div>    
+        <div id="img4">
+            <img src="assets\livingroot.jpg" style="border-radius: 20px;height: 300px;width:480px;">
+        </div>
+
+
+
+
+        <div id="left5">
+            <h1 style="font-size: 70px;">Dzüko Valley</h1>
+            
+            <p><b><i>About the place...</i></b></p>
+            <pre style="font-size: 15px;"><br>                
+                Dzukou Valley -sometimes spelled Dzükou Valley or Dzüko 
+                Valley- sits high amongst the clouds, at 2,452 meters above 
+                sea level, straddling the border of Nagaland and Manipur in 
+                northeast India.
+            </pre>
+            <br>
+            <pre style="font-size: 20px;">
+                In summer, vivid green hillocks pave the way for blue 
+                mountaintops, and bright flowers wave in the winds amongst
+                the tall grasses. In winter, temperatures drop far lower 
+                than one would expect in such tropical states, and Dzukou 
+                Valley freezes, sometimes covered in white snow. Dzukou Valley 
+                is most famous for its multicolored carpets of flowers that 
+                bloom in summer, most notably the Dzukou lily which is found 
+                only in Dzukou Valley.
+            </pre>
+        </div>
+        <div id="right5">
+            <h1>05</h1>
+        </div>    
+        <div id="img5">
+            <img src="assets\dzukou.jpg" style="border-radius: 20px;height: 300px;width:480px;">
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+    </div>
+</body>
+</html>

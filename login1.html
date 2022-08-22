@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles1.css">
+<script src="script.js"></script>
+<style>
+    body{
+        background-image:url("./img/bg.jpg") ;
+        background-repeat:repeat;
+        background-size: cover;
+    }
+</style>
+
+</head>
+
+
+<body onload="login()" >
+
+
+<!-- code -->
+<div class="login-popup" id="login">
+  <form action="home.html" class="login-container">
+    <a class="logincancel" onclick="closelogin()"><img src="img\close button.png" style="height:30px;width:30px;margin-left: 94%;"></a><br>
+    <h1 style="font-size:xx-large;">Log in</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" name="psw" required>
+
+    <button type="submit" class="btn">Log in</button>
+    <a style="text-decoration: none;" href="passwordreset.html"><p id="forgotpassword">Forgot Password?</p></a>
+  </form>
+  </div>
+ 
+</div>
+</body>
+</html>

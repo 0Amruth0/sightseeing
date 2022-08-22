@@ -1,0 +1,437 @@
+
+ /* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Hind:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Hind:wght@500&family=Yeseva+One&display=swap');
+
+
+#titlelogo{
+  font-size: 16px;
+  font-family: 'Great Vibes', cursive;
+  color: rgb(255, 208, 0);
+}
+.title { 
+    font-size: 100px;
+    font-weight: 100;
+    /* font-family: 'Great Vibes', cursive;
+    font-family: 'Hind', sans-serif;
+    font-family: 'Yeseva One', cursive; */
+    color: rgb(255, 255, 255);
+ } 
+ .titlec{ 
+  font-size: 100px;
+  font-weight: 600;
+  /* font-family: 'Great Vibes', cursive;
+  font-family: 'Hind', sans-serif;
+  font-family: 'Yeseva One', cursive; */
+  color: rgb(255, 255, 255);
+} 
+.title_s{ 
+  font-size: 50pxx;
+  font-weight: 200;
+  
+  /* font-family: 'Great Vibes', cursive;
+  font-family: 'Hind', sans-serif;
+  font-family: 'Yeseva One', cursive; */
+  color: rgb(255, 255, 255);
+} 
+.fact{
+    color: rgba(255, 255, 255, 0.897);
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Hind', sans-serif;
+    font-weight: 50;
+    font-size: 23px;  
+   
+}
+.about{
+  color: rgba(255, 255, 255, 0.897);
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Hind', sans-serif;
+  font-weight: 50;
+  font-size: 70px;
+  position: absolute;
+  top: 89%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  padding: 20px;
+  text-align: left;
+
+}
+.title1{
+  color: rgba(0, 0, 0, 0.897);
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Hind', sans-serif;
+    font-weight: 50;
+    font-size: 27px;
+    position: absolute;
+    top: 190%;
+    left: 50%;
+    z-index: 1;
+  
+}
+.des{
+  color: rgba(0, 0, 0, 0.897);
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Hind', sans-serif;
+    font-weight: 50;
+    font-size: 15px;
+    position: absolute;
+    top: 195%;
+    left: 55%;
+    width: 35%;
+    text-align: left;
+    z-index: 1;
+
+}
+.title2{
+  color: rgba(0, 0, 0, 0.897);
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Hind', sans-serif;
+    font-weight: 50;
+    font-size: 27px;
+    position: absolute;
+    top: 213%;
+    left: 63%;
+    z-index: 1;
+  
+}
+.des2{
+  color: rgba(0, 0, 0, 0.897);
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Hind', sans-serif;
+    font-weight: 50;
+    font-size: 15px;
+    position: absolute;
+    top: 218%;
+    left: 64%;
+    width: 30%;
+    text-align: left;
+    z-index: 1;
+}
+.title3{
+  color: rgba(0, 0, 0, 0.897);
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Hind', sans-serif;
+    font-weight: 50;
+    font-size: 27px;
+    position: absolute;
+    top: 213%;
+    left: 34%;
+    z-index: 1;
+  
+}
+.des3{
+  color: rgba(0, 0, 0, 0.897);
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Hind', sans-serif;
+    font-weight: 50;
+    font-size: 15px;
+    position: absolute;
+    top: 217%;
+    left: 9%;
+    width: 26%; 
+    text-align: right;
+    z-index: 1;
+}
+
+.title4{
+  color: rgba(0, 0, 0, 0.897);
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Hind', sans-serif;
+    font-weight: 50;
+    font-size: 27px;
+    position: absolute;
+    top: 240%;
+    left: 46%;
+    z-index: 1;
+  
+}
+.des4{
+  color: rgba(0, 0, 0, 0.897);
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Hind', sans-serif;
+    font-weight: 50;
+    font-size: 15px;
+    position: absolute;
+    top: 245%;
+    left: 18%;
+    width: 30%;
+    text-align: right;
+    z-index: 1;
+}
+/* header{
+    box-shadow: 4px 4px 15px rgba(15, 15, 15, 0.24);
+} */
+
+
+/* nav bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+/* nav.navbar {
+  background: transparent;
+}
+body{
+  background-color: black;
+}
+#titlelogo{
+    padding-top: 10px;
+    padding-right: 20%;
+    margin-left: 3%;
+    font-family: 'Great Vibes', cursive;
+    color: rgb(255, 208, 0);
+}
+.navbar-nav {
+    text-indent: 55px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    
+}
+ */
+
+
+/* Gird */
+
+.grid-container {
+    display: grid;
+    /* gap: 10px; */
+    background-color: #ffeec110;
+    padding: 10px;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 660px 470px 1800px ;
+   
+  }
+  
+  .grid-item {
+    background-color: rgba(248, 188, 97, 0.541);
+    text-align: center;
+   
+    font-size: 30px;
+   
+  }
+    
+  .item1 {
+    grid-column: 1;
+    grid-row: 1;
+    top:100px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: left;
+    margin-left: 15%;
+  }
+  
+  .item2 {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: rgba(0, 0, 0, 0);
+  
+
+  }
+  
+  .item3 {
+    grid-column: 1 / span 3;
+    grid-row: 2 ;
+    background-color: rgb(39, 39, 39);
+    text-align: left;
+ 
+ 
+    
+  }
+  .item4 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    background-color: rgb(255, 255, 255);
+    
+  }
+  
+  /* ImageGallery */
+
+
+  
+  /* ALL Images */
+
+.img1 {
+        position: absolute;
+        left:45%;
+        top: 50%;
+        z-index: 1; 
+        max-width: 110%;
+        max-height: 110%;
+        /* border-radius: 30px; */
+        /* box-shadow: 4px 4px 15px rgba(218, 165, 32, 0.555); */
+       
+}
+  
+.img2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: +1;
+    width: 250px;
+    height: 250px;
+    filter: brightness(120%);
+    
+}
+.imgbg{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top:5%;
+    filter: brightness(100%);
+    /* filter: blur(1px); */
+    
+
+}
+.imgbg2{
+  position: absolute;
+  z-index: 2;
+  width: 30%;
+  top:160%;
+  left: 50%;
+  filter: brightness(100%);
+  box-shadow: 1px 4px 14px rgba(20, 20, 20, 0.555);
+  /* filter: blur(1px); */
+  
+}
+.imgbg3{
+  position: absolute;
+  z-index: 2;
+  width: 20%;
+  top:150%;
+  left: 70%;
+  filter: brightness(100%);
+  box-shadow: 1px 4px 14px rgba(20, 20, 20, 0.555);
+  /* filter: blur(1px); */
+  
+
+}
+.imghp{
+    position: relative;
+    left: 60px;
+    right: 20px;
+    top:410px;
+    max-height: 140%;
+    z-index: 2;
+    box-shadow: 3px 3px 14px rgba(20, 20, 20, 0.822);
+   
+}
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-image: linear-gradient(to right, rgb(207, 49, 255) , rgba(255, 46, 150, 0.692)) ; /* Black w/opacity/see-through */
+    color: white; 
+ 
+    position: absolute;
+    top: 110%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 45%;
+    padding: 20px;  
+    text-align: left;
+    
+  }
+ .compass{
+        max-width: 100%;
+        max-height: 100%;
+        opacity: 0.7;
+        filter: brightness(120%);
+        z-index: 1;
+        position:relative;
+        top: 485px;
+ }
+ /* ImgGallery */
+ div.gallery {
+  margin: 5px;
+  border-radius: 15px;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  font-size: medium;
+  position: relative;
+  top:470px;
+ 
+}
+
+div.gallery:hover {
+  border-radius: 15px;
+  
+  box-shadow: 2px 2px 10px rgba(165, 165, 165, 0.685);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  border-radius: 15px;
+}
+/* footer */
+#footer {
+  height: 250px;
+  padding: 20px;
+  margin-bottom: -30px;
+  margin-right: -8px;
+  margin-left: -8px;
+  background-color: #1f2937;
+}
+#connect {
+  display: flex;
+  flex: 1 1 0;
+  justify-content: center;
+  gap: 20px;
+}
+#connect2 {
+  display: flex;
+  flex: 1 1 0;
+  justify-content: center;
+  gap: 20px;
+  text-decoration:none;
+  color: #111;
+}
+.res{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: large;
+}
+/* footer{
+  background-color: rgb(63, 63, 63);
+  height: 300px;
+}
+.fot{
+  padding:20px;
+  padding-left: 400px;
+} */

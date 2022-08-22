@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>west</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Hind:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Hind:wght@500&family=Yeseva+One&display=swap');
+
+        #titlelogo{
+        font-size: 16px;
+        font-family: 'Great Vibes', cursive;
+        color: rgb(255, 208, 0);
+        }
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        font-family:  "Montserrat",sans-serif;
+        }
+
+        li {
+        float: left;
+        }
+
+        li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+        background-color: #111;
+        }
+
+        .active {
+        background-color: #04AA6D;
+        }
+        div.north{
+            background-image: url('./assets/westbg.jgp.jpg');
+            height: 900px;
+            background-repeat:no-repeat;
+            padding: 10px;
+        }
+        #middle1 {
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            top: 700px;
+            left: 820px;
+            text-align: center;
+        }
+        #left1 {
+            position: absolute;
+            width: 40%;
+            top: 1100px;
+            color: white;
+            border: 3px solid transparent;
+            height:300px;
+            border-radius: 20px;
+            left: 50px;
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+
+        }
+        #right1 {
+            position: absolute;
+            font-size: 200px;
+            color: white;
+            top:700px;
+            left: 73%;
+        }
+        #img1 {
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            top: 1500px;
+            left: 72%;
+        }
+        #left2 {
+            position: absolute;
+            width: 40%;
+            top: 1900px;
+            color: white;
+            border: 3px solid transparent;
+            height:300px;
+            border-radius: 20px;
+            left: 45%;
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+        }
+        #right2{
+            position: absolute;
+            font-size: 200px;
+            color: white;
+            top:1500px;
+            left: 5%;
+
+        }
+        #img2{
+            position: absolute;
+            top: 2300px;
+            left: 20%;
+            
+        }
+        #left3 {
+            position: absolute;
+            width: 40%;
+            top: 2700px;
+            color: white;
+            border: 3px solid transparent;
+            height:300px;
+            border-radius: 20px;
+            left: 50px;
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+        }
+        #right3 {
+            position: absolute;
+            font-size: 200px;
+            color: white;
+            top:2300px;
+            left: 70%;
+
+        }
+        #img3 {
+            position: absolute;
+            top: 3100px;
+            left: 60%;
+        }
+        #left4 {
+            position: absolute;
+            width: 40%;
+            top: 3420px;
+            color: white;
+            border: 3px solid transparent;
+            height:300px;
+            border-radius: 20px;
+            left: 47%;
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+
+        }
+        #right4 {
+            position: absolute;
+            font-size: 200px;
+            color: white;
+            top:3000px;
+            left: 5%;
+
+        }
+        #img4 {
+            position: absolute;
+            top: 3800px;
+            left: 20%;
+        }
+        #left5 {
+            position: absolute;
+            width: 40%;
+            top: 4150px;
+            color: white;
+            border: 3px solid transparent;
+            height:300px;
+            border-radius: 20px;
+            left: 50px;
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+        }
+        #right5 {
+            position: absolute;
+            font-size: 200px;
+            color: white;
+            top:3800px;
+            left: 70%;
+        }
+        #img5 {
+            position: absolute;
+            top: 4600px;
+            left: 60%;
+        }
+        /* @keyframes animate{
+            0% {
+                transform: translateX(0px);
+            }
+            50% {
+                transform: translate(20px);
+            }
+            100%{
+                transfomr: translate(0px);
+            }
+        } */
+        @keyframes rotatee{
+            0% {
+                transform: scale(0.4) ;
+            }
+            50% {
+                transform: scale (0.7) ;
+            }
+            100% {
+                transform: scale (1) ;
+            }
+        }
+        #img1:hover,#img2:hover,#img3:hover,#img4:hover,#img5:hover{
+            animation: animate 1s ease forwards;
+        }
+        #img1,#img2,#img3,#img4,#img5,#right1,#right2,#right3,#right3,#right4,#left1,#left2,#left3,#left4,#left5,#middle1,.north{
+            animation: rotatee 1s ease forwards;
+        }
+
+    </style>
+</head>
+<body bgcolor="#333">
+    <header>
+        <ul>
+            <li style="padding-right:35% ;" id="titlelogo"><a href="#home">Elysian elegance</a></li>
+
+            <li><a href="north.html">NORTH</a></li>
+            <li><a href="east.html">EAST</a></li>   
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="west.html">WEST</a></li>
+            <li><a href="south.html">SOUTH</a></li>
+          </ul>
+    </header>
+    <div class="north">
+        <div id="middle1">
+            <img src="img/homepage.jpg" style="width:300px;height: 300px; border-radius: 20px;">
+            <h1 style="margin-top:-80%;color:azure;font-family: 'Trebuchet MS' ;color: black;">WEST</h1>
+        </div>
+        <div id="left1">
+            <h1 style="font-size: 100px;"><b>Chand Baori</b></h1>
+            <p><b><i>About the place...</i></b></p>
+            <pre style="font-size: 15px;">
+                The Chand Baori is one of the few stepwells that has "two classical 
+                periods of water building in a single setting", according to Morna 
+                Livingston in Steps to Water: The Ancient Stepwells of India.
+            </pre>
+            <pre style="font-size: 20px;">
+                This step well is one of the ancient step wells of Rajasthan, 
+                it was built by King Chandra of the Nikumbha dynasty, who ruled 
+                over the Abhaneri in the eighth and ninth century, Chand Bawdi 
+                is named after the name of King Chandra. The legend is related to 
+                the stepwell that this bawdi build by the ghost in one night only 
+                In Dausa district, Bhandarej village also has a big step well which 
+                was also constructed in the same night. The chand bawdi and the big 
+                Bawdi are connected to each other by a tunnel.
+            </pre>
+        </div>
+        <div id="right1">
+            <h1>01</h1>
+        </div>    
+        <div id="img1">
+            <img src="assets\chandbawdi.jpg" style="border-radius: 20px;height: 300px;width:480px;">
+        </div>
+
+
+
+
+        <div id="left2">
+            <h1 style="font-size: 70px;">Rani ki vav</h1>
+            <p><b><i>About the place...</i></b></p>
+            <pre style="font-size: 15px;"><br>
+                Rani ki vav is an intricately constructed stepwell situated in 
+                the town of Patan in Gujarat, India. It is located on the banks 
+                of Saraswati River. Rani ki vav was built as a memorial to an 
+                11th-century AD king Bhimdev I .
+            </pre>
+            <br>
+            <br>
+                <pre style="font-size: 20px;">
+                    Rani-ki-Vav, on the banks of the Saraswati River, was initially built 
+                    as a memorial to a king in the 11th century AD. Stepwells are a 
+                    distinctive form of subterranean water resource and storage systems 
+                    on the Indian subcontinent, and have been constructed since the 3rd 
+                    millennium BC. They evolved over time from what was basically a pit 
+                    in sandy soil towards elaborate multi-storey works of art and architecture. 
+                    Rani-ki-Vav was built at the height of craftsmens’ ability in stepwell 
+                    construction and the Maru-Gurjara architectural style, reflecting mastery 
+                    of this complex technique and great beauty of detail and proportions.
+                </pre>
+        </div>
+        <div id="right2">
+            <h1>02</h1>
+        </div>    
+        <div id="img2">
+            <img src="assets\ranikivav.jpg" style="border-radius: 20px;height: 300px;width:480px;">
+        </div>
+
+
+
+
+
+        <div id="left3">
+            <h1 style="font-size: 70px;">Jal Mahal</h1>
+            <p><b><i>About the place...</i></b></p>
+            <pre style="font-size: 15px;"><br>                
+                The boats are traditionally built by boat makers of Vrindavan and a 
+                ride to Jal Mahal in those boats takes you to the beautiful history 
+                of Rajasthan. Jal Mahal which literally means the “Water Palace” is 
+                a palace located in the middle of the Man Sagar Lake in Jaipur city, 
+                the capital of the state of Rajasthan.
+            </pre>
+            <br>
+            <br>
+            <pre style="font-size: 20px;">
+                The Jal Mahal literally means the “Water Palace”. While a lot of people 
+                come to see the Jal Mahal from the banks of the Man Sagar Lake, not many 
+                are aware of the technology and innovative design that has gone into 
+                building this ancient palace. On the surface, the palace appears to 
+                have one floor, but actually, there are four more submerged levels to the 
+                palace as its stone walls hold back millions of litres of water, and the s
+                pecially designed lime mortar prevents water seepage into the palace, 
+                something which it has been doing for more than 250 years.
+            </pre>
+        </div>
+        <div id="right3">
+            <h1>03</h1>
+        </div>    
+        <div id="img3">
+            <img src="assets\jahalmahal.jpg" style="border-radius: 20px;height: 300px;width:480px;">
+        </div>
+
+
+
+
+
+        <div id="left4">
+            <h1 style="font-size: 70px;">Nalanda</h1>
+            <p><b><i>About the place...</i></b></p>
+            <pre style="font-size: 15px;"><br>                
+                Nalanda Nalanda district in Bihar is one of the prime tourist hotspots
+                in the state. The destination is historically and culturally rich and 
+                is home to the ancient Nalanda University, 
+            </pre>
+            <br>
+            <br>
+            <pre style="font-size: 20px;">
+                The Nalanda Mahavihara site is in the State of Bihar, in north-eastern 
+                India. It comprises the archaeological remains of a monastic and 
+                scholastic institution dating from the 3rd century BCE to the 13th 
+                century CE. It includes stupas, shrines, viharas (residential and educational buildings) 
+                and important art works in stucco, stone and metal. Nalanda stands out as 
+                the most ancient university of the Indian Subcontinent. It engaged in the o
+                rganized transmission of knowledge over an uninterrupted period of 800 years. 
+                The historical development of the site testifies to the development of Buddhism 
+                into a religion and the flourishing of monastic and educational traditions.
+            </pre>
+        </div>
+        <div id="right4">
+            <h1>04</h1>
+        </div>    
+        <div id="img4">
+            <img src="assets\nalanda.jpg" style="border-radius: 20px;height: 300px;width:480px;">
+        </div>
+
+
+
+
+        <div id="left5">
+            <h1 style="font-size: 70px;">Mandu</h1>
+            
+            <p><b><i>About the place...</i></b></p>
+            <pre style="font-size: 15px;"><br>                
+                A city located approx 35 km from Dhar and 100 km away from 
+                Indore and is a major tourist attraction of the state of
+                Madhya Pradesh. 
+            </pre>
+            <br>
+            <pre style="font-size: 20px;">
+                It is located in the Malwa region. it’s official language is Hindi. 
+                Mandav or Mandu, back in its days was an important military outpost 
+                due to its strategic position and natural defenses- The Vindhya Range 
+                of mountains and the river Narmada which blocked the enemy’s way, 
+                thus leaving North as the only direction to enter from and the three 
+                gates to enter the fortified city of Mandu- Alamgir Gate, Bhangi Gate 
+                and the Delhi Gate. After the Bhangi Gate the road branches out to the 
+                Delhi Gate and Gadi Gate. The extensive and now mainly deserted hill top 
+                fort of Mandu is one of the most interesting sights in central India. 
+                It’s on an isolated outcrop separated from the table land to the north 
+                by a deep and wide valley called Kakra Khoh which encircles it on the 
+                east, west and north, over which a natural causeway runs to the main city 
+                gate. To the south of Mandu the land drops steeply away to the main plain 
+                far below and the view is superb. Deep ravines cut into the sides of the 20 sqkm 
+                plateau occupied by the fort. The ruins are spread over an area of 21 sq. km. 
+                The Muslim rulers dubbed it Shadiabad or the City of Joy.
+
+            </pre>
+        </div>
+        <div id="right5">
+            <h1>05</h1>
+        </div>    
+        <div id="img5">
+            <img src="assets\mandu.jpg" style="border-radius: 20px;height: 300px;width:480px;">
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+    </div>
+</body>
+</html>

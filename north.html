@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>north</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Hind:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Hind:wght@500&family=Yeseva+One&display=swap');
+
+        #titlelogo{
+        font-size: 16px;
+        font-family: 'Great Vibes', cursive;
+        color: rgb(255, 208, 0);
+        }
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        font-family:  "Montserrat",sans-serif;
+        }
+
+        li {
+        float: left;
+        }
+
+        li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+        background-color: #111;
+        }
+
+        .active {
+        background-color: #04AA6D;
+        }
+        div.north{
+            background-image: url('./assets/hima.jpg');
+            height: 900px;
+            background-repeat:no-repeat;
+            padding: 10px;
+        }
+        #middle1 {
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            top: 700px;
+            left: 820px;
+            text-align: center;
+        }
+        #left1 {
+            position: absolute;
+            width: 40%;
+            top: 1100px;
+            color: white;
+            border: 3px solid transparent;
+            height:300px;
+            border-radius: 20px;
+            left: 50px;
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+
+        }
+        #right1 {
+            position: absolute;
+            font-size: 200px;
+            color: white;
+            top:700px;
+            left: 73%;
+        }
+        #img1 {
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            top: 1500px;
+            left: 72%;
+        }
+        #left2 {
+            position: absolute;
+            width: 40%;
+            top: 1900px;
+            color: white;
+            border: 3px solid transparent;
+            height:300px;
+            border-radius: 20px;
+            left: 45%;
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+        }
+        #right2{
+            position: absolute;
+            font-size: 200px;
+            color: white;
+            top:1500px;
+            left: 5%;
+
+        }
+        #img2{
+            position: absolute;
+            top: 2300px;
+            left: 20%;
+            
+        }
+        #left3 {
+            position: absolute;
+            width: 40%;
+            top: 2700px;
+            color: white;
+            border: 3px solid transparent;
+            height:300px;
+            border-radius: 20px;
+            left: 50px;
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+        }
+        #right3 {
+            position: absolute;
+            font-size: 200px;
+            color: white;
+            top:2300px;
+            left: 70%;
+
+        }
+        #img3 {
+            position: absolute;
+            top: 3100px;
+            left: 60%;
+        }
+        #left4 {
+            position: absolute;
+            width: 40%;
+            top: 3420px;
+            color: white;
+            border: 3px solid transparent;
+            height:300px;
+            border-radius: 20px;
+            left: 47%;
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+
+        }
+        #right4 {
+            position: absolute;
+            font-size: 200px;
+            color: white;
+            top:3000px;
+            left: 5%;
+
+        }
+        #img4 {
+            position: absolute;
+            top: 3800px;
+            left: 20%;
+        }
+        #left5 {
+            position: absolute;
+            width: 40%;
+            top: 4150px;
+            color: white;
+            border: 3px solid transparent;
+            height:300px;
+            border-radius: 20px;
+            left: 50px;
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+        }
+        #right5 {
+            position: absolute;
+            font-size: 200px;
+            color: white;
+            top:3800px;
+            left: 70%;
+        }
+        #img5 {
+            position: absolute;
+            top: 4600px;
+            left: 60%;
+        }
+        /* @keyframes animate{
+            0% {
+                transform: translateX(0px);
+            }
+            50% {
+                transform: translate(20px);
+            }
+            100%{
+                transfomr: translate(0px);
+            } */
+        /* } */
+        @keyframes rotatee{
+            0% {
+                transform: scale(0.4) ;
+            }
+            50% {
+                transform: scale (0.7) ;
+            }
+            100% {
+                transform: scale (1) ;
+            }
+        }
+        #img1:hover,#img2:hover,#img3:hover,#img4:hover,#img5:hover{
+            animation: animate 1s ease forwards;
+        }
+        #img1,#img2,#img3,#img4,#img5,#right1,#right2,#right3,#right3,#right4,#left1,#left2,#left3,#left4,#left5,#middle1,.north{
+            animation: rotatee 1s ease forwards;
+        }
+
+    </style>
+</head>
+<body bgcolor="#333">
+    <header>
+        <ul>
+            <li style="padding-right:35% ;" id="titlelogo"><a href="#home">Elysian elegance</a></li>
+
+            <li><a href="north.html">NORTH</a></li>
+            <li><a href="east.html">EAST</a></li>   
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="west.html">WEST</a></li>
+            <li><a href="south.html">SOUTH</a></li>
+            
+        
+          </ul>
+    </header>
+    <div class="north">
+        <div id="middle1">
+            <img src="img/homepage.jpg" style="width:300px;height: 300px; border-radius: 20px;">
+            <h1 style="margin-top:-80%;color:azure;font-family: 'Trebuchet MS' ;color: black;">NORTH</h1>
+        </div>
+        <div id="left1">
+            <h1 style="font-size: 100px;"><b>Hemis Monestary</b></h1>
+            <p><b><i>Near by places to visit</i></b></p>
+            <pre style="font-size: 15px;">
+                ⦁	Stakna Gompa.<br>
+                ⦁	Shang Gompa.<br>
+                ⦁	Gotsang Gompa.<br>
+            </pre>
+            <pre style="font-size: 20px;">
+            Hemis is situated around 45 kms to the south of Leh on the western banks of the Indus River. 
+            The Hemis Monastery is the biggest and very richly endowed monastery of Ladakh. It was built in 1630. 
+            Impressive and intriguing, Hemis is different from the other important monasteries of Ladakh. 
+            The monastery is decorated on all four sides by colourful prayer flags which flutter in the 
+            breeze and send prayers to Lord Buddha.</pre>
+        </div>
+        <div id="right1">
+            <h1>01</h1>
+        </div>    
+        <div id="img1">
+            <img src="assets\hermesmonastry.jpg" style="border-radius: 20px; box-shadow: inset;">
+        </div>
+
+
+
+
+        <div id="left2">
+            <h1 style="font-size: 70px;">Gravity Defying Palace</h1>
+            <p><b><i>About the place...</i></b></p>
+            <pre style="font-size: 15px;"><br>
+                It is the largest unsupported construction in the world,
+                 which was constructed without using any wood or metal.
+            </pre>
+            <br>
+            <br>
+                <pre style="font-size: 20px;">
+                It is believed that there are around 1024 ways to reach the terrace,
+                but only one way to come back.As per legends, the palace was built by
+                more than 20000 workers. And myth has it that ordinary labourers used to
+                work during the day time at the construction site, whereas courtiers and
+                architects worked on building this site during night time so that their
+                method and appearances were not identified by anyone.
+                </pre>
+        </div>
+        <div id="right2">
+            <h1>02</h1>
+        </div>    
+        <div id="img2">
+            <img src="assets\gravitydefyingpalace.jpg" style="border-radius: 20px;height: 300px;width:480px;">
+        </div>
+
+
+
+
+
+        <div id="left3">
+            <h1 style="font-size: 70px;">Skeleton Lake</h1>
+            <p><b><i>About the place...</i></b></p>
+            <pre style="font-size: 15px;"><br>                
+            High in the Indian Himalayas, a remote lake nestled in a snowy
+            valley is strewn with hundreds of human skeletons.
+            </pre>
+            <br>
+            <br>
+            <pre style="font-size: 20px;">
+            Roopkund Lake is located 5,029 metres (16,500ft) above sea level
+            at the bottom of a steep slope on Trisul, one of India's highest
+            mountains, in the state of Uttarakhand.The remains are strewn around
+            and beneath the ice at the "lake of skeletons", discovered by a 
+            patrolling British forest ranger in 1942.    
+            </pre>
+        </div>
+        <div id="right3">
+            <h1>03</h1>
+        </div>    
+        <div id="img3">
+            <img src="assets\skeletonlake.jpg" style="border-radius: 20px;height: 300px;width:480px;">
+        </div>
+
+
+
+
+
+        <div id="left4">
+            <h1 style="font-size: 70px;">Magnetic Hills</h1>
+            <p><b><i>About the place...</i></b></p>
+            <pre style="font-size: 15px;"><br>                
+            The Magnetic Hill is an example of a gravity hill, a type of optical
+            illusion created by rising and descending terrain. It is located at
+            the northwestern edge of the city of Moncton in the Canadian
+            province of New Brunswick.
+            </pre>
+            <br>
+            <br>
+            <pre style="font-size: 20px;">
+            One such sight attraction is Magnetic Hill, the place where gravity 
+            takes a backseat. Lying at a distance of around 30 km from Leh, the 
+            Magnetic Hill is marked by a yellow signboard which reads 
+            “The Phenomenon That Defies Gravity”. It also instructs you to park
+            your vehicles in the box marked with a white point on the road, which
+            is known as the Magnetic Road. When parked at the indicated spot, 
+            vehicles begin moving forward at a speed of almost 20km/h.    
+            </pre>
+        </div>
+        <div id="right4">
+            <h1>04</h1>
+        </div>    
+        <div id="img4">
+            <img src="assets\magnetichills.jpg" style="border-radius: 20px;height: 300px;width:480px;">
+        </div>
+
+
+
+
+        <div id="left5">
+            <h1 style="font-size: 70px;">Masroor Rock Cut</h1>
+            <h1 style="font-size: 70px;">Temple</h1>
+            
+            <p><b><i>About the place...</i></b></p>
+            <pre style="font-size: 15px;"><br>                
+                Situated 32 kms from Kangra in Dharamsala on the Nagrota- Surian 
+                Link Road, Masroor Rock Cut Temple is an archaeological site which 
+                is currently in ruins. The complex is a combination of 15 rock cut 
+                temples designed in the Indo- Aryan style of architecture, believed 
+                to have been built in the 8th century (as per relics).
+            </pre>
+            <br>
+            <pre style="font-size: 20px;">
+                The Masroor Temples, also referred to as Masroor Temples or Rock-cut
+                Temples at Masroor, is an early 8th-century complex of rock-cut 
+                Hindu temples in the Kangra Valley of Beas River in Himachal Pradesh,
+                India. The temples face northeast, towards the Dhauladhar range of 
+                the Himalayas. They are a version of North Indian Nagara architecture 
+                style, dedicated to Shiva, Vishnu, Devi and Saura traditions of 
+                Hinduism, with its surviving iconography likely inspired by a 
+                monotheistic framework.
+            </pre>
+        </div>
+        <div id="right5">
+            <h1>05</h1>
+        </div>    
+        <div id="img5">
+            <img src="assets\masroor.jpg" style="border-radius: 20px;height: 300px;width:480px;">
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+    </div>
+</body>
+</html>

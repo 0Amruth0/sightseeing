@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles1.css">
+<script src="script.js"></script>
+</head>
+<style>
+    body{
+        background-image:url("./img/bg.jpg") ;
+        background-repeat:repeat;
+        background-size: cover;
+    }
+</style>
+<body onload="signup()">
+
+<!-- code -->
+  
+  <div class="signup-popup" id="signup">
+    <form action="home.html" class="signup-container">
+   
+      <a class="signupcancel" onclick="closesignup()"><img src="img/close button.png" style="height:30px;width:30px;margin-left: 96%;"></a><br>
+      <h1 style="font-size:xx-large;">Sign up</h1>
+  
+      <label for="text"><b>Name</b></label>
+      <input type="text" name="name" required>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" name="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" name="psw" required>
+  
+      <label for="cpsw"><b>Confirm Password</b></label>
+      <input type="password" name="cpsw" required>
+  
+      <button type="submit" class="btn">Sign up</button>
+    </form>
+</div>
+</body>
+</html>
